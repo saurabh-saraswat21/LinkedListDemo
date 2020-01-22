@@ -1,17 +1,16 @@
 package Main;
 
+import Student.Student;
 import node.Node;
 
 public class Main {
     public static void main(String[] args) {
-    Node<Integer> node1 = new Node<Integer>(4,null);
-        Node<Integer> node2 = new Node<Integer>(5,node1);
-        Node<Integer> node3 = new Node<Integer>(6,node2);
-        Node<Integer> node4 = new Node<Integer>(7,node3);
-        System.out.println("N1"+node1);
-        System.out.println("n2"+node2);
-        System.out.println("n3"+node3);
-        System.out.println("n4"+node4);
-        System.out.println(node4.getNext().getNext().getNext().getData());
+        Student s1=new Student("Vijay",68);
+        Node<Student> vijay = new Node<Student>(s1,null);
+        System.out.println(vijay.getData());
+        Student s2=new Student("Tanesh",63);
+        Node<Student> Tanesh = new Node<Student>(s2,vijay);
+        System.out.println(Tanesh.getData());
+        System.out.println(Tanesh.getNext());
     }
 }
