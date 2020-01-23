@@ -2,7 +2,11 @@ import Adt.ListADT;
 
 public class MyList<E> implements ListADT<E> {
 
-    private static class Node {
+    private static class Node<E>{
+        private E data;
+        private Node<E> next;
+
+
 
 
     }
