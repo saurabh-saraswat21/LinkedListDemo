@@ -1,6 +1,6 @@
 package Adt;
 
-public interface ListADT {
+public interface ListADT<E> {
     boolean insert(int value);
 
     int search (int value);

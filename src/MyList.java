@@ -1,6 +1,13 @@
 import Adt.ListADT;
 
-public class MyList implements ListADT {
+public class MyList<E> implements ListADT<E> {
+
+    private static class Node {
+
+
+    }
+
+
 
     int [] array;
     //public MyList()
